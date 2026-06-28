@@ -1,0 +1,491 @@
+body{
+    background-color: #ffffeb;
+    
+}
+
+.secciones{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.secciones p{
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*======================================
+                FOOTER
+======================================*/
+footer{
+    background:#020617;
+    color:white;
+    padding:70px 10% 25px;
+    border-top:1px solid #1E293B;
+}
+.piepagina{
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:50px;
+    margin-bottom:40px;
+}
+.footer-info h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+.footer-info p{
+    color:#94A3B8;
+    line-height:1.7;
+}
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.footer-links a{
+    text-decoration:none;
+    color:#CBD5E1;
+    transition:.3s;
+    font-weight:500;
+}
+.footer-links a:hover{
+    color:#00FFC8;
+    transform:translateX(5px);
+}
+.copyright{
+    text-align:center;
+    border-top:1px solid #1E293B;
+    padding-top:25px;
+    color:#64748B;
+    font-size:.95rem;
+}
+/*======================================
+                HEADER
+======================================*/
+.encabezado{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#091b38;
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid #020617;
+}
+.navbar{
+    max-width:1300px;
+    margin:auto;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:1.6rem;
+    font-weight:700;
+    color:white;
+    text-decoration:none;
+    letter-spacing:1px;
+    transition:.3s;
+}
+.logo:hover{
+    color:#00FFC8;
+}
+.menu{
+    display:flex;
+    gap:45px;
+    list-style:none;
+}
+.menu a{
+    color:#cbd5e1;
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:2px;
+    background:linear-gradient(
+        90deg,
+        #ff00d4,
+        #00ffc8
+    );
+    transition:.35s;
+}
+.menu a:hover{
+    color:white;
+}
+.menu a:hover::after{
+    width:100%;
+}
+.btn-cv{
+    text-decoration:none;
+    color:white;
+    padding:12px 26px;
+    border-radius:40px;
+    font-weight:600;
+    background:linear-gradient(
+        135deg,
+        #ff00d4,
+        #00ffc8
+    );
+    transition:.35s;
+}
+.btn-cv:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    0 0 20px rgba(255,0,212,.35),
+    0 0 20px rgba(0,255,200,.25);
+}
+html{
+    scroll-behavior:smooth;
+}
+section{
+    scroll-margin-top:100px;
+}
+/*======================================
+            HERO
+======================================*/
+
+#hero{
+
+    background-image:url(../img/principio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:rgb(253, 249, 250);
+    padding:180px 10% 140px;
+    text-align:center;
+}
+#hero h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:4rem;
+    margin-bottom:20px;
+    color:#f00ff8;
+}
+#hero h3{
+    color:#2bdefd;
+    font-size:1.5rem;
+    font-weight:500;
+    margin-bottom:30px;
+}
+#hero p{
+    max-width:800px;
+    margin:auto;
+    color:#eaf1fa;
+    line-height:1.9;
+    font-size:1.15rem;
+}
+/*======================================
+            SOBRE MI
+======================================*/
+
+#about{
+
+    background:#0e0d0d;
+
+    padding:120px 10%;
+
+    text-align:center;
+
+}
+
+#about h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:3rem;
+    color:#d60999;
+    margin-bottom:35px;
+    position:relative;
+}
+#about h1::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    margin:15px auto 0;
+    background:#3bf6f6;
+    border-radius:10px;
+}
+
+#about p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:#fdf0f0;
+
+    font-size:1.1rem;
+
+}
+
+/*======================================
+            PROYECTOS
+======================================*/
+#proyectos{
+    background-image:url(../img/principio.jpg) ;
+    padding:120px 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#proyectos>p:first-child{
+    text-align:center;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:3rem;
+    font-weight:700;
+    color:#ff13cc;
+    margin-bottom:70px;
+    position:relative;
+}
+#proyectos>p:first-child::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    margin:18px auto;
+    background:#3bdaf6;
+    border-radius:10px;
+}
+#proyectos>p:last-child{
+    max-width:900px;
+    margin:auto;
+    background:rgb(224, 220, 220);
+    padding:45px;
+    border-radius:20px;
+    border:1px solid #E5E7EB;
+    color:#070f0f;
+    line-height:1.9;
+    font-size:1.1rem;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+#proyectos>p:last-child:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 25px 45px rgba(59,130,246,.18);
+}
+#about{
+    
+    color: rgb(92, 63, 170);
+    font-family:'Space Grotesk',sans-serif;
+    text-align: center;
+}
+/*======================================
+            TECNOLOGÍAS
+======================================*/
+#tecnologias{
+    background:#050505;
+    padding:120px 10%;
+}
+.titulo-seccion{
+    text-align:center;
+    margin-bottom:70px;
+}
+.titulo-seccion span{
+    color:#ff2fd0;
+    font-size:.9rem;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+.titulo-seccion h2{
+    font-size:4rem;
+    color:white;
+    margin:15px 0;
+    font-family:'Space Grotesk',sans-serif;
+}
+.titulo-seccion p{
+    color:#9ca3af;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+.contenedor-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+.card{
+    position:relative;
+    overflow:hidden;
+    padding:35px;
+    border-radius:20px;
+    background:linear-gradient(
+    145deg,
+    rgba(255,0,170,.12),
+    rgba(0,255,180,.08));
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    backdrop-filter:blur(10px);
+}
+/* brillo */
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:1px;
+    border-radius:20px;
+    background:linear-gradient(
+    135deg,
+    #ff00c8,
+    #00ffbf);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+}
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:
+    0 0 25px rgba(255,0,180,.25),
+    0 0 40px rgba(0,255,170,.18);
+}
+.card h3{
+    color:white;
+    font-size:1.6rem;
+    margin-bottom:25px;
+    font-family:'Space Grotesk',sans-serif;
+    position:relative;
+}
+.card h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:4px;
+    margin-top:12px;
+    border-radius:20px;
+    background:linear-gradient(
+    90deg,
+    #ff00d4,
+    #00ffc8);
+}
+.card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.card li{
+    color:#d1d5db;
+    margin:18px 0;
+    font-size:1.05rem;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.card li::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:linear-gradient(
+    90deg,
+    #ff00c8,
+    #00ffbf);
+    box-shadow:
+    0 0 8px #ff00c8,
+    0 0 8px #00ffbf;
+}
+/*======================================
+            CONTACTO
+======================================*/
+#contacto{
+    background:#010203;
+    padding:120px 10%;
+}
+.titulo-contacto{
+    text-align:center;
+    margin-bottom:70px;
+}
+.titulo-contacto span{
+    color:#00ffc8;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:.9rem;
+    font-weight:700;
+}
+.titulo-contacto h2{
+    font-size:4rem;
+    color:white;
+    margin:15px 0;
+    font-family:'Space Grotesk',sans-serif;
+}
+.titulo-contacto p{
+    color:#9CA3AF;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+.contenedor-contacto{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+.contact-card{
+    background:#1E293B;
+    border:1px solid #646d79;
+    border-radius:18px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s;
+}
+.contact-card:hover{
+    transform:translateY(-10px);
+    border-color:#3B82F6;
+    box-shadow:0 15px 40px rgba(59,130,246,.25);
+}
+.contact-card img{
+    width:70px;
+    height:70px;
+    margin-bottom:25px;
+}
+.contact-card h3{
+    color:white;
+    font-size:1.5rem;
+    margin-bottom:12px;
+}
+.contact-card p{
+    color:#94A3B8;
+    margin-bottom:25px;
+    line-height:1.7;
+}
+.contact-card a{
+    color:#3B82F6;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+.contact-card a:hover{
+    color:#60A5FA;
+}
+/* experiencias */
+#experiencias{
+    background-image:url(../img/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    gap:35px;
+}
+#experiencias h1{
+    text-align: center;
+    color: #00ffc8;
+}
