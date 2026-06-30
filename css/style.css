@@ -282,51 +282,6 @@ section{
 /*======================================
             PROYECTOS
 ======================================*/
-#proyectos{
-    background-image:url(../img/principio.jpg) ;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    padding:120px 10%;
-}
-#proyectos>p:first-child{
-    text-align:center;
-    font-family:'Space Grotesk',sans-serif;
-    font-size:3rem;
-    font-weight:700;
-    color:#ff13cc;
-    margin-bottom:70px;
-    position:relative;
-}
-#proyectos>p:first-child::after{
-    content:"";
-    display:block;
-    width:90px;
-    height:4px;
-    margin:18px auto;
-    background:#3bdaf6;
-    border-radius:10px;
-}
-#proyectos>p:last-child{
-    max-width:900px;
-    margin:auto;
-    background:rgb(224, 220, 220);
-    padding:45px;
-    border-radius:20px;
-    border:1px solid #E5E7EB;
-    color:#070f0f;
-    line-height:1.9;
-    font-size:1.1rem;
-    box-shadow:
-        0 15px 35px rgba(0,0,0,.08);
-    transition:.35s;
-}
-#proyectos>p:last-child:hover{
-    transform:translateY(-8px);
-    box-shadow:
-        0 25px 45px rgba(59,130,246,.18);
-}
 
 /*======================================
             TECNOLOGÍAS
@@ -567,6 +522,9 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap: 30px;
     margin: 20px;
+}
+.contenedor-experiencia p{
+    color: grey;
 }
 .card-experiencia::before{
     content:"";
