@@ -1,0 +1,131 @@
+/*======================================
+            TABLETS
+======================================*/
+
+@media (min-width:768px){
+
+    footer{
+        padding:60px 6% 25px;
+    }
+
+    .piepagina{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:flex-start;
+        text-align:left;
+        gap:40px;
+    }
+
+    .footer-info{
+        flex:1;
+    }
+
+    .footer-links{
+        align-items:flex-start;
+    }
+
+    .footer-info h2{
+        font-size:1.8rem;
+    }
+
+    .copyright{
+        font-size:.9rem;
+    }
+
+}
+
+
+/*======================================
+            ESCRITORIO
+======================================*/
+
+@media (min-width:1024px){
+
+    footer{
+        padding:70px 10% 25px;
+    }
+
+    .piepagina{
+        gap:50px;
+        margin-bottom:40px;
+    }
+
+    .footer-info h2{
+        font-size:2rem;
+    }
+
+    .footer-info p{
+        font-size:1rem;
+    }
+
+    .copyright{
+        font-size:.95rem;
+    }
+
+}
+/* 
+====================
+Encbezado
+=====================
+*/
+@media (min-width:768px){
+
+    .navbar{
+        padding:18px 6%;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:30px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .menu{
+        width:auto;
+        gap:30px;
+        flex-wrap:nowrap;
+    }
+
+    .menu a{
+        font-size:1rem;
+    }
+
+    .btn-cv{
+        padding:11px 24px;
+    }
+
+    section{
+        scroll-margin-top:110px;
+    }
+
+}
+
+
+/*======================================
+                ESCRITORIO
+======================================*/
+
+@media (min-width:1024px){
+
+    .navbar{
+        padding:20px 8%;
+    }
+
+    .logo{
+        font-size:1.6rem;
+    }
+
+    .menu{
+        gap:45px;
+    }
+
+    .btn-cv{
+        padding:12px 26px;
+    }
+
+    section{
+        scroll-margin-top:100px;
+    }
+
+}

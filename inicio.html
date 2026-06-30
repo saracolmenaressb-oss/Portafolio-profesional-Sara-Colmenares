@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="encabezado">
-        <nav class="navbar">
-            <a href="#hero" class="logo">
-                Sara Colmenares
-            </a>
-            <ul class="menu">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#tecnologias">Tecnologías</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <a href="cv/Sara_Colmenares_CV.pdf" class="btn-cv" download>
-                Descargar CV
-            </a>
-        </nav>
-    </header>
+<header class="encabezado">
+    <nav class="navbar">
+        <a href="#hero" class="logo">
+            Sara Colmenares
+        </a>
+        <ul class="menu">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="cv/Sara_Colmenares_CV.pdf" class="btn-cv" download>
+            Descargar CV
+        </a>
+    </nav>
+</header>
     <main>
         <section id="hero">
             <h1>Sara lucia Colmenares Bonilla</h1>
@@ -30,17 +31,54 @@
             <p >Transformo ideas en soluciones tecnológicas mediante código limpio, aprendizaje continuo y desarrollo orientado a resultados.</p>
         </section>
         <section id="about">
-            <h1>Sobre mi</h1>
-            <p>Soy Sara Colmenares, estudiante de Análisis y Desarrollo de Software, apasionada por la tecnología y el desarrollo de soluciones que generan valor. Cuento con conocimientos en programación, desarrollo web y metodologías ágiles, respaldados por una mentalidad analítica, aprendizaje continuo y orientación a resultados. Me caracterizo por asumir cada desafío con compromiso, responsabilidad y atención al detalle, buscando aportar soluciones eficientes mientras continúo fortaleciendo mis competencias técnicas y profesionales en entornos de innovación</p>
+            <img src="img/foto-mia.jpg" alt="foto">
+            <div class="parte-mia">
+                <h1>Sobre mi</h1>
+                <p>
+                    Soy Sara Colmenares, estudiante de Análisis y Desarrollo de Software,
+                    apasionada por la tecnología y el desarrollo de soluciones que generan valor. 
+                    Cuento con conocimientos en programación, desarrollo web y metodologías ágiles, 
+                    respaldados por una mentalidad analítica, aprendizaje continuo y orientación a 
+                    resultados. Me caracterizo por asumir cada desafío con compromiso, responsabilidad 
+                    y atención al detalle, buscando aportar soluciones eficientes mientras continúo 
+                    fortaleciendo mis competencias técnicas y profesionales en entornos de innovación
+                </p>
+            </div>
         </section>
-        <section id="proyectos">
-            <p>aqui van los proyectos</p>
-            <p>
-                Desarrollo de un sitio web de reservas hoteleras
-                con HTML, CSS y JavaScript, implementando
-                LocalStorage, gestión de reservas y
-                funcionalidades para usuarios y administradores
-            </p>
+        <section id="experiencias">
+            <h1>Aqui van las experiencias</h1>
+            <div class="contenedor-experiencia">
+                <article class="card-experiencia">
+                    <h2>Aplicacion: Campuslands academico</h2>
+                    <h3>Campuslands</h3>
+                    <p>
+                    Desarrollo de una aplicación académica en Python
+                    para la gestión de usua rios, cursos y calificaciones,
+                    aplicando programación modular, funciones y
+                    estructuras de datos.
+                    </p>
+                </article>
+                <article class="card-experiencia">
+                    <h2>Campuslands: Gestor de Tareas con Scrum</h2>
+                    <h3>Campuslands</h3>
+                    <p>
+                        Desarrollo de una aplicación en Python para la
+                        gestión y priorización de tareas, aplicando la
+                        metodología ágil Scrum en la planificación y
+                        organización del proyecto.
+                    </p>
+                </article>
+                <article class="card-experiencia">
+                    <h2>Sitio web: Hotel rincon del carmen</h2>
+                    <h3>Campuslands</h3>
+                    <p>
+                        Desarrollo de un sitio web de reservas hoteleras
+                        con HTML, CSS y JavaScript, implementando
+                        LocalStorage, gestión de reservas y
+                        funcionalidades para usuarios y administradores.
+                    </p>
+                </article>
+            </div>
         </section>
         <section id="tecnologias">
             <div class="titulo-seccion">
@@ -89,40 +127,6 @@
                     </ul>
                 </article>
             </div>
-        </section>
-        <section id="experiencias">
-            <h1>Aqui van las experiencias</h1>
-            <div class="card">
-                <h3>Aplicacion: Campuslands academico</h3>
-                <h2>Campuslands</h2>
-                <p>
-                    Desarrollo de una aplicación académica en Python
-                    para la gestión de usuarios, cursos y calificaciones,
-                    aplicando programación modular, funciones y
-                    estructuras de datos.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Gestor de Tareas con Scrum</h3>
-                <h2>Campuslands</h2>
-                <p>
-                    Desarrollo de una aplicación en Python para la
-                    gestión y priorización de tareas, aplicando la
-                    metodología ágil Scrum en la planificación y
-                    organización del proyecto.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Sitio web: Hotel rincon del carmen</h3>
-                <h2>Campuslands</h2>
-                <p>
-                    Desarrollo de un sitio web de reservas hoteleras
-                    con HTML, CSS y JavaScript, implementando
-                    LocalStorage, gestión de reservas y
-                    funcionalidades para usuarios y administradores.
-                </p>
-            </div>
-
         </section>
         <section id="contacto">
             <div class="titulo-contacto">

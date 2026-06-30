@@ -1,5 +1,7 @@
 body{
     background-color: #ffffeb;
+    width:100%;
+    min-height:100vh;
     
 }
 
@@ -19,51 +21,64 @@ body{
 ======================================*/
 footer{
     background:#020617;
-    color:white;
-    padding:70px 10% 25px;
+    color:#fff;
+    padding:50px 20px 20px;
     border-top:1px solid #1E293B;
 }
+
 .piepagina{
     max-width:1300px;
-    margin:auto;
+    margin:0 auto 30px;
     display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    flex-wrap:wrap;
-    gap:50px;
-    margin-bottom:40px;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:35px;
 }
+
+.footer-info{
+    width:100%;
+}
+
 .footer-info h2{
     font-family:'Space Grotesk',sans-serif;
-    font-size:2rem;
-    margin-bottom:10px;
+    font-size:1.6rem;
+    margin-bottom:12px;
 }
+
 .footer-info p{
     color:#94A3B8;
     line-height:1.7;
+    font-size:.95rem;
 }
+
 .footer-links{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:15px;
+    align-items:center;
 }
+
 .footer-links a{
     text-decoration:none;
     color:#CBD5E1;
-    transition:.3s;
     font-weight:500;
+    transition:.3s;
 }
+
 .footer-links a:hover{
     color:#00FFC8;
     transform:translateX(5px);
 }
+
 .copyright{
     text-align:center;
     border-top:1px solid #1E293B;
-    padding-top:25px;
+    padding-top:20px;
     color:#64748B;
-    font-size:.95rem;
+    font-size:.85rem;
 }
+
 /*======================================
                 HEADER
 ======================================*/
@@ -73,48 +88,58 @@ footer{
     left:0;
     width:100%;
     z-index:1000;
-    background:#091b38;
+    background:#0c1c35;
     backdrop-filter:blur(18px);
-    border-bottom:1px solid #020617;
+    border-bottom:1px solid #01030e;
 }
+
 .navbar{
     max-width:1300px;
     margin:auto;
-    padding:20px 8%;
+    padding:15px 20px;
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
     align-items:center;
+    gap:20px;
 }
+
 .logo{
     font-family:'Space Grotesk',sans-serif;
-    font-size:1.6rem;
+    font-size:1.4rem;
     font-weight:700;
-    color:white;
+    color:#fff;
     text-decoration:none;
     letter-spacing:1px;
     transition:.3s;
 }
+
 .logo:hover{
     color:#00FFC8;
 }
+
 .menu{
+    width:100%;
     display:flex;
-    gap:45px;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
     list-style:none;
 }
+
 .menu a{
-    color:#cbd5e1;
+    color:#CBD5E1;
     text-decoration:none;
-    font-size:1rem;
+    font-size:.95rem;
     font-weight:500;
     transition:.3s;
     position:relative;
 }
+
 .menu a::after{
     content:"";
     position:absolute;
     left:0;
-    bottom:-8px;
+    bottom:-5px;
     width:0;
     height:2px;
     background:linear-gradient(
@@ -124,17 +149,21 @@ footer{
     );
     transition:.35s;
 }
+
 .menu a:hover{
-    color:white;
+    color:#fff;
 }
+
 .menu a:hover::after{
     width:100%;
 }
+
 .btn-cv{
     text-decoration:none;
-    color:white;
-    padding:12px 26px;
+    color:#fff;
+    padding:10px 22px;
     border-radius:40px;
+    font-size:.9rem;
     font-weight:600;
     background:linear-gradient(
         135deg,
@@ -143,17 +172,20 @@ footer{
     );
     transition:.35s;
 }
+
 .btn-cv:hover{
     transform:translateY(-3px);
     box-shadow:
-    0 0 20px rgba(255,0,212,.35),
-    0 0 20px rgba(0,255,200,.25);
+        0 0 20px rgba(255,0,212,.35),
+        0 0 20px rgba(0,255,200,.25);
 }
+
 html{
     scroll-behavior:smooth;
 }
+
 section{
-    scroll-margin-top:100px;
+    scroll-margin-top:140px;
 }
 /*======================================
             HERO
@@ -162,24 +194,38 @@ section{
 #hero{
 
     background-image:url(../img/principio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     color:rgb(253, 249, 250);
     padding:180px 10% 140px;
     text-align:center;
 }
 #hero h1{
     font-family:'Space Grotesk',sans-serif;
-    font-size:4rem;
+    font-size:2.5rem;
     margin-bottom:20px;
-    color:#f00ff8;
+    color: deeppink;
+}
+@media (min-width:768px){
+        #hero h1{
+            font-size:3rem;
+        }
+    }
+
+@media (min-width:1024px){
+    #hero h1{
+        font-size:4rem;
+        }
 }
 #hero h3{
-    color:#2bdefd;
-    font-size:1.5rem;
     font-weight:500;
     margin-bottom:30px;
+    color:#00ffc8;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:.9rem;
 }
 #hero p{
     max-width:800px;
@@ -193,15 +239,22 @@ section{
 ======================================*/
 
 #about{
-
     background:#0e0d0d;
-
     padding:120px 10%;
-
     text-align:center;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-
+#about img{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+.parte-mia{
+    display: flex;
+    flex-direction: column;
+}
 #about h1{
     font-family:'Space Grotesk',sans-serif;
     font-size:3rem;
@@ -218,19 +271,12 @@ section{
     background:#3bf6f6;
     border-radius:10px;
 }
-
 #about p{
-
     max-width:900px;
-
     margin:auto;
-
     line-height:2;
-
     color:#fdf0f0;
-
     font-size:1.1rem;
-
 }
 
 /*======================================
@@ -238,10 +284,11 @@ section{
 ======================================*/
 #proyectos{
     background-image:url(../img/principio.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     padding:120px 10%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 #proyectos>p:first-child{
     text-align:center;
@@ -280,12 +327,7 @@ section{
     box-shadow:
         0 25px 45px rgba(59,130,246,.18);
 }
-#about{
-    
-    color: rgb(92, 63, 170);
-    font-family:'Space Grotesk',sans-serif;
-    text-align: center;
-}
+
 /*======================================
             TECNOLOGÍAS
 ======================================*/
@@ -305,10 +347,21 @@ section{
     font-weight:700;
 }
 .titulo-seccion h2{
-    font-size:4rem;
+     font-size:2.2rem;
     color:white;
     margin:15px 0;
     font-family:'Space Grotesk',sans-serif;
+}
+@media (min-width:768px){
+    .titulo-seccion h2{
+        font-size:3rem;
+    }
+}
+
+@media (min-width:1024px){
+    .titulo-seccion h2{
+        font-size:4rem;
+    }
 }
 .titulo-seccion p{
     color:#9ca3af;
@@ -407,7 +460,11 @@ section{
             CONTACTO
 ======================================*/
 #contacto{
-    background:#010203;
+    background-image: url(../img/img5.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     padding:120px 10%;
 }
 .titulo-contacto{
@@ -475,12 +532,15 @@ section{
 .contact-card a:hover{
     color:#60A5FA;
 }
-/* experiencias */
+/* ==================
+     experiencias
+================== */
 #experiencias{
-    background-image:url(../img/img4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image:url("/img/seccion 2.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     display:flex;
     flex-direction: column;
     gap:35px;
@@ -488,4 +548,82 @@ section{
 #experiencias h1{
     text-align: center;
     color: #00ffc8;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:2.2rem;
+}
+@media (min-width:768px){
+        #experiencias h1{
+            font-size:3rem;
+        }
+    }
+
+@media (min-width:1024px){
+    #experiencias h1{
+        font-size:4rem;
+        }
+}
+.contenedor-experiencia{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+    margin: 20px;
+}
+.card-experiencia::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:1px;
+    border-radius:20px;
+    background:linear-gradient(
+    135deg,
+    #ff00c8,
+    #00ffbf);
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+}
+.card-experiencia{
+    position:relative;
+    overflow:hidden;
+    padding:35px;
+    border-radius:20px;
+    color: white;
+    background:linear-gradient(
+    145deg,
+    rgba(255,0,170,.12),
+    rgba(0,255,180,.08));
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+    backdrop-filter:blur(10px);
+}
+.card-experiencia{
+    transform:translateY(-12px);
+    box-shadow:
+    0 0 25px rgba(255,0,180,.25),
+    0 0 40px rgba(0,255,170,.18);
+}
+.card-experiencia h2{
+    color: deeppink;
+    font-size:1.6rem;
+    margin-bottom:25px;
+    font-family:'Space Grotesk',sans-serif;
+    position:relative;
+}
+.card-experiencia h3{
+    color: #00ffc8;
+    font-style: italic;
+}
+.card-experiencia h2::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:4px;
+    margin-top:12px;
+    border-radius:20px;
+    background:linear-gradient(
+    90deg,
+    #ff00d4,
+    #00ffc8);
 }
